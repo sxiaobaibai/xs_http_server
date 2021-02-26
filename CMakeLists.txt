@@ -3,12 +3,12 @@ project("http server")
 
 set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -Wall")
 
-
-add_executable(server src/main.cc)
+add_executable(server src/main.cc src/http.cc)
+add_executable(test src/test.cc)
 
 target_include_directories(server
 	PRIVATE
-	./inc/
+	inc/
 )
 
 #target_link_libraries(exec
