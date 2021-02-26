@@ -2,7 +2,7 @@
 http server by C++
 
 ## Usage
-### build
+build the project
 ```
 mkdir build
 cd build
